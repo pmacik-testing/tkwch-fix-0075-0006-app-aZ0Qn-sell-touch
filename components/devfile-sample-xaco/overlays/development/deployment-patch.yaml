@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xaco
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0006-tenant/tkwch-fix-0075-0006-app/devfile-sample-xaco@sha256:942ddea7f2d33d5227c91ad02f5af0f765b1d9cb0833474057509bb5b1c0fbf2
+        name: my-nodejs
+        resources: {}
+status: {}
